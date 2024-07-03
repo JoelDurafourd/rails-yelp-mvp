@@ -11,6 +11,7 @@
 <ul>
   <% @restaurant.reviews.each do |review| %>
   <li>review: <%= review.content %> rating: <%= review.rating %></li>
+  <%= link_to "Delete", review_path(review), data: {turbo_method: :delete} %>
   <% end %>
 </ul>
 
