@@ -1,0 +1,6 @@
+<% @restaurants.each do |restaurant| %>
+  <article class="mb-3">
+    <h2><a href="<%= restaurant_path(restaurant) %>"><%= restaurant.name %></a></h2>
+  </article>
+<% end %>
+<a class="btn btn-primary" href="/restaurants/new">New restaurant</a>
